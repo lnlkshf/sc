@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .quan {
+        width: 500px;
+        height: 500px;
+        border: 2px solid #000000;
+        border-radius: 50%;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <title>网页设计示例</title>
+    <style>
+      body {
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      p {
+        text-indent: 2em;
+        font-size: 16px;
+      }
+      .search-container {
+        text-align: center;
+        margin-top: 50px;
+      }
+
+      .search-input {
+        padding: 10px;
+        width: 300px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+
+      .search-button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #ffffff;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+      }
+
+      .image {
+        flex: 1;
+        padding: 20px;
+      }
+
+      .text {
+        flex: 1;
+        padding: 20px;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <title>点击按钮弹出提示框</title>
+  </head>
+  <body>
+    <div>
+      <a class="quan" href="team.html">球队</a>
+      <a class="quan" href="team.html">球员</a>
+      <a class="quan" href="team.html">历史事件</a>
+    </div>
+    <div class="search-container">
+      <input type="text" class="search-input" placeholder="请输入搜索词" />
+      <button class="search-button">搜索</button>
+    </div>
+    <div><div class="container">
+    <a href="team.html"><div class="image">
+      <img src="img/掘金.jpg"alt="图片">
+    </div></a>
+    <div class="text">
+      <h1>更多新闻</h1>
+      <p><a href="new-page.html">点击这里</a> </p>
+    </div></div>
+    <script>
+      // 获取按钮元素
+      var button = document.getElementById("myButton");
+
+      // 添加点击事件监听器
+      button.addEventListener("click", function () {
+        // 弹出提示框
+        alert("按钮被点击了！");
+      });
+    </script>
+  </body>
+</html>
